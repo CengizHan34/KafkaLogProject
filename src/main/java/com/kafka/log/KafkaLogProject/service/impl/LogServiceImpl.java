@@ -15,7 +15,6 @@ import java.util.Optional;
  */
 @Service
 public class LogServiceImpl implements LogService {
-
     private LogDao logDao;
 
     @Autowired
@@ -26,7 +25,13 @@ public class LogServiceImpl implements LogService {
     @Override
     public Log save(Log log) {
         Log saved = logDao.save(log);
+
         return saved;
+    }
+
+    @Override
+    public String publish(){
+        return "Connection";
     }
 
     @Override
