@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.kafka.log.KafkaLogProject.type.CityName;
 import com.kafka.log.KafkaLogProject.type.LogLevelType;
 import lombok.*;
-import reactor.core.CoreSubscriber;
-import reactor.core.publisher.Flux;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -21,7 +19,7 @@ import java.sql.Timestamp;
 @Data
 @Entity
 @SequenceGenerator(name = "LogGenerator", sequenceName = "LogSequence", allocationSize = 1)
-public class Log extends Flux<Log> {
+public class Log {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "LogGenerator")
@@ -37,9 +35,4 @@ public class Log extends Flux<Log> {
     private CityName cityName;
 
     private String logDetail;
-
-    @Override
-    public void subscribe(CoreSubscriber<? super Log> coreSubscriber) {
-
-    }
 }
