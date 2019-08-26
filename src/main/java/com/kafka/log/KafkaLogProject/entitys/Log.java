@@ -26,13 +26,13 @@ public class Log {
     private Long id;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSS")
-    private Timestamp createLogDate;
+    private Timestamp createdDate;
 
     @Enumerated(EnumType.STRING)
-    private LogLevelType logLevelType;
+    private LogLevelType levelType;
 
     @Enumerated(EnumType.STRING)
     private CityName cityName;
 
-    private String logDetail;
+    private String detail;
 }

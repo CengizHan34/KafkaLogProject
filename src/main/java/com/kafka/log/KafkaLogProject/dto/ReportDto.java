@@ -1,9 +1,10 @@
 package com.kafka.log.KafkaLogProject.dto;
 
-import com.kafka.log.KafkaLogProject.type.CityName;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
+
+import java.util.Date;
 
 /**
  * Created by Cengiz HAN
@@ -12,6 +13,6 @@ import lombok.ToString;
 @ToString
 @Builder
 public class ReportDto {
-    private CityName cityName;
-    private Long logCount;
+    private Date x;
+    private long y;
 }

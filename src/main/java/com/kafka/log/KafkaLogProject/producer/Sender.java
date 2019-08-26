@@ -17,10 +17,6 @@ public class Sender {
     private String topic;
 
     public void send(String data) {
-//            Map<String, Object> headers = new HashMap<>();
-//            headers.put(KafkaHeaders.TOPIC, topic);
-//            Message<LogDto> message = MessageBuilder.withPayload(logDto)
-//                    .setHeader(KafkaHeaders.TOPIC, topic).build();
         kafkaTemplate.send(topic, data);
     }
 }
