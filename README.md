@@ -1,0 +1,3 @@
+# KafkaLogProject
+
+Read me
