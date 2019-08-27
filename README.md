@@ -1,3 +1,2 @@
-# KafkaLogProject
-
-Read me
+# Kafka Log Project
+=============
