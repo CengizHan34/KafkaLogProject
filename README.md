@@ -19,7 +19,7 @@ Kullanılan teknolojiler
   
   İlgili containerları çalıştırdıktan sonra projemizi ayağa kaldırabiliriz.
   
-  Projemizin çalışma mantığı, scheduler kullanılarak saniyede bir random log üretilemtedir.Üretilen bu loglar 30 sn boyunca toplandıktan sonra websocket'e gönderilerek real-time olarak line chart'da gösterilmektedir.
+  Projemizin çalışma mantığı, scheduler kullanılarak saniyede bir random log üretilmektedir.Üretilen bu loglar 30 sn boyunca toplandıktan sonra websocket'e gönderilerek real-time olarak line chart'da gösterilmektedir.
   
   
 ```sh
