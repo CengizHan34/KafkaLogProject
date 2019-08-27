@@ -18,6 +18,7 @@
                     console.log('Connected: ' + frame);
                     stompClient.subscribe('/topic/log', function (greeting) {
                         data = JSON.parse(greeting.body);
+                        updateChart();
                     });
                 });
             });
@@ -105,7 +106,7 @@
                 chart.render();
             }
 
-            updateChart();
+
             var start = true;
 
             function updateChart() {
@@ -143,12 +144,12 @@
                     chart.render();
                 }
             }
+            updateChart();
 
-
-            var updateInterval = 1000;
-            setInterval(function () {
-                updateChart()
-            }, updateInterval);
+            // var updateInterval = 1000;
+            // setInterval(function () {
+            //     updateChart()
+            // }, updateInterval);
 
         }
     </script>
