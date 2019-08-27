@@ -21,7 +21,11 @@ Kullanılan teknolojiler
   
   Projemizin çalışma mantığı, scheduler kullanılarak saniyede bir random log üretilemtedir.Üretilen bu loglar 30 sn boyunca toplandıktan sonra websocket'e gönderilerek real-time olarak line chart'da gösterilmektedir.
   
+  
+```sh
   Uygulamanın dashboard sayfası : localhost:8080
   Zookeeper'ın çalıştığı ip adresi ve port numarası :  192.168.99.100:2181
   Kafka'nın çalıştığı ip adresi ve port numarası : 192.168.99.100:9092
+```
+
   
