@@ -28,4 +28,4 @@ Kullanılan teknolojiler
   Kafka'nın çalıştığı ip adresi ve port numarası : 192.168.99.100:9092
 ```
 
-  ![](https://pasteboard.co/IuAxP5v.png)
+  ![](https://pasteboard.co/26221779-9e04-4c76-82d7-cde5b0d15af8)
