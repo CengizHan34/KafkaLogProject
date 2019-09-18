@@ -19,4 +19,12 @@ services:
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-    - "zookeeper"
+    - zookeeper
+  spring:
+    container_name: spring
+    image: cengiz/docker-spring-boot
+    ports:
+    - "8080:8080"
+    depends_on:
+    - kafka
+    - zookeeper
