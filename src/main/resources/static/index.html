@@ -111,8 +111,6 @@
 
             function updateChart() {
                 var time = new Date;
-                if (time.getSeconds() % 30 == 0 || start) {
-                    start = false;
 
                     dataPoints1.push({
                         x: time.getTime(),
@@ -142,7 +140,7 @@
                     chart.options.data[3].legendText = " Tokyo " + data.Tokyo.y;
                     chart.options.data[4].legendText = " London " + data.London.y;
                     chart.render();
-                }
+
             }
             updateChart();
 
