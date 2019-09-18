@@ -8,6 +8,8 @@ Kullanılan teknolojiler
   - Kafka
   - Docker
   - JavaScript
+  - Web Socket
+  - H2 Database
   
   Uygulamamızı çalıştırabilmek için zookeeper ve kafkayı ayağa kaldırmamız gerekmektedir.Bunun için terminalde KafkaLogProject ana dizininde iken asagidaki satiri calistirmak yeterli olacaktir.
   
